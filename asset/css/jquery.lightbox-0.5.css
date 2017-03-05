@@ -1,0 +1,129 @@
+/**
+ * jQuery lightBox plugin
+ * This jQuery plugin was inspired and based on Lightbox 2 by Lokesh Dhakar (http://www.huddletogether.com/projects/lightbox2/)
+ * and adapted to me for use like a plugin from jQuery.
+ * @name jquery-lightbox-0.5.css
+ * @author Leandro Vieira Pinho - http://leandrovieira.com
+ * @version 0.5
+ * @date April 11, 2008
+ * @category jQuery plugin
+ * @copyright (c) 2008 Leandro Vieira Pinho (leandrovieira.com)
+ * @license CCAttribution-ShareAlike 2.5 Brazil - http://creativecommons.org/licenses/by-sa/2.5/br/deed.en_US
+ * @example Visit http://leandrovieira.com/projects/jquery/lightbox/ for more informations about this jQuery plugin
+ */
+#jquery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    width: 100%;
+    height: 500px;
+}
+#jquery-lightbox {
+    position: fixed;
+    top: 15px !important;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+    line-height: 0;
+}
+#lightbox-image{
+    z-index: 1;
+    position: relative;
+    margin-top: 40px;
+    left: 35px;
+    border: 3px solid white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 3px 1px #000000;
+    box-shadow: 0px 0px 3px 1px #000000;
+}
+#jquery-lightbox a img { border: none; }
+#lightbox-container-image-box {
+    position: relative;
+    background-color: #fff;
+    /*    width: 250px;
+        height: 250px;*/
+    width: 970px !important;
+    height: 550px !important;
+    margin: 0 auto;
+}
+#lightbox-container-image { padding: 10px; }
+#lightbox-loading {
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+}
+#lightbox-nav {
+    position: relative;
+    z-index: 10;
+}
+#lightbox-container-image-box > #lightbox-nav { left: 0; }
+#lightbox-nav a { outline: none;}
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext {
+    z-index: 1;
+    position: relative;
+    width: 44px;
+    height: 34px !important;
+    display: block;
+}
+#lightbox-nav-btnPrev { 
+    left: 170px !important; 
+    float: left;
+}
+#lightbox-nav-btnNext { 
+    right: 0; 
+    float: right;
+}
+#lightbox-container-image-data-box {
+    font: 10px Verdana, Helvetica, sans-serif;
+    background-color: #fff;
+    margin: 0 auto;
+    line-height: 1.4em;
+    overflow: auto;
+    width: 890px !important;
+    height: 80px;
+    padding: 0 40px 0;
+}
+#lightbox-container-image-data {
+    padding: 0 10px; 
+    color: #666; 
+}
+#lightbox-container-image-data #lightbox-image-details { 
+    width: 70%; 
+    float: left; 
+    text-align: left; 
+    margin-top: 10px;
+}	
+#lightbox-image-details-caption{
+    font-weight: lighter;
+    font-size: x-large;
+}
+#lightbox-image-details-currentNumber{
+    display: block; 
+    clear: left; 
+    padding-bottom: 1.0em;	
+}			
+#lightbox-secNav-btnClose {
+    z-index: 2;
+    position: relative;
+    top: 50px;
+    right: 60px;
+    width: 66px;
+    float: right;
+    padding-bottom: 0.7em;
+}
+#shad_lightbox_image{
+    width: 868px;
+    height: 182px;
+    background-image: url('../img/pop_up/img_add/shad_lightbox_image.png');
+    margin: 0px auto;
+    top: -60px;
+    z-index: 0;
+    position: relative;
+}
